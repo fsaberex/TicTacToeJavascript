@@ -67,8 +67,6 @@ function checkBoard () {
         const winningCombo = winningCells[i];
         let match = 0;
 
-        // return cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[b].textContent === cells[c].textContent;
-
         for (let j =0; j < winningCombo.length; j++) {
             if (currentPlayer.occupiedCells.includes(winningCombo[j])) {
                 match++;
@@ -120,3 +118,4 @@ function clearBoard () {
 
 cells.forEach(cell => cell.addEventListener('click', handleCellClick));
 restartButton.addEventListener('click', clearBoard);
+
