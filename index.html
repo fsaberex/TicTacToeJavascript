@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cellStyle" id="cell1" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell2" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell3" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell4" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell5" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell6" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell7" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell8" onclick="this.onclick=null;"></div>
-    <div class="cellStyle" id="cell9" onclick="this.onclick=null;"></div>
+    <div id = "board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <p id="game-message"></p>
+
+    <button id="restart-button">Restart</button>
+
+
     <script src="./script.js"></script>
 </body>
 </html>
